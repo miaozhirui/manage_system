@@ -17,7 +17,8 @@
             "repo":"https://github.com/miaozhirui/manage_system.git",
             "path": "/usr/local/www/manage_system",
             "ssh_options": "StrictHostKeyChecking=no",
-            "pre-deploy-local":"git pull origin master",
+            "pre-deploy-local": "git pull origin master",
+            "post-deploy":"git pull origin master",
             "env": {
                 "NODE_ENV": "production"
             }
