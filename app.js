@@ -69,6 +69,6 @@ mongoose.connect('mongodb://60.205.231.190:27017/blog', function(error){
     } else {
 
         console.log('数据库连接成功')
-        app.listen(3001);
+        app.listen(3003);
     }
 });
