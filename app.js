@@ -46,7 +46,7 @@ app.use(function(req, res, next) {
 
 app.get('/test', function(req, res){
 
-    res.render('test');
+    res.render('test66666');
 })
 
 app.use('/admin', require('./routes/admin.js'));
