@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "name": "manage_system",
+            "script": "app.js",
+            "env": {
+                "COMMON_VARIABLE": "true"
+            }
+        }
+    ],
+    "deploy": {
+        "production": {
+            "user": "root",
+            "host": ["60.205.231.190"],
+            "port": "29999",
+            "ref": "origin/master",
+            "repo":"git@github.com:miaozhirui/manage_system.git",
+            "path": "/usr/local/www/manage_system",
+            "ssh_options": "StrictHostKeyChecking=no",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    }
+}
