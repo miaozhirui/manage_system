@@ -21,6 +21,7 @@ router.get('/user', function(req, res) {
     res.send('api - user');
 })
 
+
 //注册
 router.post('/register', function(req, res){
 

@@ -44,6 +44,10 @@ app.use(function(req, res, next) {
     
 })
 
+app.get('/test', function(req, res){
+
+    res.render('test');
+})
 
 app.use('/admin', require('./routes/admin.js'));
 app.use('/api', require('./routes/api.js'));

@@ -17,7 +17,7 @@
             "repo":"git@github.com:miaozhirui/manage_system.git",
             "path": "/usr/local/www/manage_system",
             "ssh_options": "StrictHostKeyChecking=no",
-            "post-deploy": "git pull && pm2 startOrRestart ecosystem.json --env production",
+            "post-deploy": "git pull",
             "env": {
                 "NODE_ENV": "production"
             }
