@@ -14,7 +14,7 @@
             "host": ["60.205.231.190"],
             "port": "29999",
             "ref": "origin/master",
-            "repo":"git@github.com:miaozhirui/manage_system.git",
+            "repo":"https://github.com/miaozhirui/manage_system.git",
             "path": "/usr/local/www/manage_system",
             "ssh_options": "StrictHostKeyChecking=no",
             "pre-deploy-local":"git pull origin master",
