@@ -66,7 +66,7 @@ app.get('/login', function(req, res) {
 
 app.use(function(error, req, res, next){
     
-    res.status(500).send(err.stack);
+    res.status(500).send(error.stack);
 
 })
 
