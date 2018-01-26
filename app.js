@@ -64,6 +64,12 @@ app.get('/login', function(req, res) {
     res.render('login');
 })
 
+app.use(function(error, req, res, next){
+    
+    res.status(500).send(err.stack);
+
+})
+
 mongoose.connect('mongodb://60.205.231.190:27017/blog', function(error){
 
     if(error) {
